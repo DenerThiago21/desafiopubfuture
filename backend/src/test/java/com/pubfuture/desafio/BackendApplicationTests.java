@@ -1,10 +1,10 @@
-package com.publica;
+package com.pubfuture.desafio;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PublicaApplicationTests {
+class BackendApplicationTests {
 
 	@Test
 	void contextLoads() {

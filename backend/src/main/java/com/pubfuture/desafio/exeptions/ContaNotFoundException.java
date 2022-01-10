@@ -1,4 +1,4 @@
-package com.publica.exeptions;
+package com.pubfuture.desafio.exeptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

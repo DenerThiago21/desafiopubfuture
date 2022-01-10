@@ -1,4 +1,5 @@
-package com.publica.services;
+package com.pubfuture.desafio.services;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +7,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.publica.model.Conta;
-import com.publica.repository.ContaRepository;
+import com.pubfuture.desafio.model.Conta;
+import com.pubfuture.desafio.repository.ContaRepository;
 
 @Service
 public class ContaService implements InterfaceConta {
@@ -38,5 +39,6 @@ public class ContaService implements InterfaceConta {
 	public void removeConta(Long id) {
 		contaRepository.deleteById(id);
 	}
+	
 
 }

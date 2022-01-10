@@ -1,5 +1,4 @@
-package com.publica.model;
-
+package com.pubfuture.desafio.model;
 import java.io.Serializable;
 
 import javax.persistence.Column;

@@ -1,9 +1,9 @@
-package com.publica.services;
+package com.pubfuture.desafio.services;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.publica.model.Conta;
+import com.pubfuture.desafio.model.Conta;
 
 public interface InterfaceConta {
 	List<Conta> listarContas();
