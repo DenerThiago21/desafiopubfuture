@@ -95,9 +95,9 @@ public class ContaController {
 	
 	/** Listar saldo Total */
 	@GetMapping(value="/saldoTotal")
-	public int  saldoTotal() {
+	public double  saldoTotal() {
 		List<Conta> contas = contaService.listarContas();
-		int saldoTotal = 0;
+		double saldoTotal = 0;
 		
 		for(int i = 0; i < contas.size(); i++) {
 			saldoTotal = saldoTotal + contas.get(i).getSaldo();

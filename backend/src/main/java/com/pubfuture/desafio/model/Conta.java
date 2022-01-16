@@ -1,11 +1,13 @@
 package com.pubfuture.desafio.model;
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -19,7 +21,7 @@ public class Conta implements Serializable{
 	private String tipoConta;
 	
 	@Column(nullable = false)
-	private int saldo;
+	private double saldo;
 	
 	//Alterar Depois para int(utilizar uma API com todas as instituições financeiras existentes)
 	@Column(nullable = false)
@@ -41,11 +43,11 @@ public class Conta implements Serializable{
 		this.tipoConta = tipoConta;
 	}
 
-	public int getSaldo() {
+	public double getSaldo() {
 		return saldo;
 	}
 
-	public void setSaldo(int saldo) {
+	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
 
@@ -56,5 +58,5 @@ public class Conta implements Serializable{
 	public void setInstituicaoFinanceira(String instituicaoFinanceira) {
 		this.instituicaoFinanceira = instituicaoFinanceira;
 	}
-	
+
 }
